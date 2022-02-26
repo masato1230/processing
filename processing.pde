@@ -4,6 +4,7 @@ void setup() {
   size(1200, 800, P3D);
   img = loadImage("vitpilen.jpeg");
   img.resize(1200, 800);
+  noLoop();
 }
 
 void draw() {
@@ -11,7 +12,7 @@ void draw() {
   noStroke();
   sphereDetail(3);
   
-  float tiles = 10000;
+  float tiles = 1000;
   float tileSize = width / tiles;
   
   push();
